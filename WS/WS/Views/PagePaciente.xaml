@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WS.Views.PagePaciente" Title="Agendamento de Pacientes">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Bem-Vindo!!" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Frame BorderColor="Black" CornerRadius="20" Margin="20">
+                <StackLayout>
+                    <Label Text="Nome Do Paciente:" FontAttributes="Bold"/>
+                    <Entry x:Name="txtNomePaciente" Placeholder="Digite o Nome do Paciente"/>
+                    <Label Text="Escolha o Médico para a Consulta:" FontAttributes="Bold"/>
+                    <Picker x:Name="pckMedico" Title="Escolha o Médico"/>
+                    <Label Text="Marque o Dia da Consulta:" FontAttributes="Bold"/>
+                    <DatePicker x:Name="dtpDia" Format="dd/MM/yyyy"/>
+                    <Label Text="Marque a Hora da Consulta:" FontAttributes="Bold"/>
+                    <TimePicker x:Name="tmpHora" Format="HH:mm"/>
+                    <Button x:Name="btnCadastrar" Text="Cadastrar" FontAttributes="Bold" BackgroundColor="LightGreen" CornerRadius="20" Clicked="btnCadastrar_Clicked"/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="btnVoltar" Text="Voltar" FontAttributes="Bold" BackgroundColor="IndianRed" CornerRadius="20" Clicked="btnVoltar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WS.Views.PageMedico" Title="Cadastro de Médicos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Bem-Vindo!!" FontSize="Title" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Frame BorderColor="Black" CornerRadius="20" Margin="20">
+                <StackLayout>
+                    <Label Text="Nome Do Médico:" FontAttributes="Bold"/>
+                    <Entry x:Name="txtNomeMedico" Placeholder="Digite o Nome do Médico"/>
+                    <Label Text="Especialidade Do Médico:" FontAttributes="Bold"/>
+                    <Entry x:Name="txtEspecialidadeMedico" Placeholder="Digite a Especialidade do Médico"/>
+                    <Button x:Name="btnCadastrar" Text="Cadastrar" FontAttributes="Bold" BackgroundColor="LightGreen" CornerRadius="20" Clicked="btnCadastrar_Clicked"/>
+                </StackLayout>
+            </Frame>
+            <Button x:Name="btnVoltar" Text="Voltar" FontAttributes="Bold" BackgroundColor="IndianRed" CornerRadius="20" Clicked="btnVoltar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
